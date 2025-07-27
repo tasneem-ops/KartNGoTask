@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kartngotask.ui.HomeFragment"
+        android:label="Home Fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_itemsListFragment"
+            app:destination="@id/itemsListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemsListFragment"
+        android:name="com.example.kartngotask.ui.ItemsListFragment"
+        android:label="List Fragment" >
+        <action
+            android:id="@+id/action_itemsListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

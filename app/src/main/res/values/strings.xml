@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KartNGo Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sar">SAR</string>
+    <string name="list_fragment">التصنيفات</string>
+    <string name="home_fragment">الصفحة الرئيسية</string>
+    <string name="show_card">عرض السلة</string>
+</resources>

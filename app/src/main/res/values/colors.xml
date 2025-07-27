@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#5A9BD5</color>
+    <color name="light_blue_bg">#E6F0FA</color>
+    <color name="dark_blue_text">#0D3B66</color>
+    <color name="grayish_blue_text">#7A8BA6</color>
+
+    <!-- Backgrounds -->
+    <color name="main_background">#F9FBFD</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="bottom_bar_background">#5A9BD5</color>
+
+    <!-- Accent Colors -->
+    <color name="orange_accent">#F9B233</color>
+    <color name="burger_king_red">#FF4B00</color>
+
+    <!-- Buttons -->
+    <color name="button_bg_light_blue">#E6F0FA</color>
+    <color name="button_icon_blue">#5A9BD5</color>
+
+    <!-- Icons -->
+    <color name="search_icon_color">#5A9BD5</color>
+    <color name="chip_selected_background">#D7E8FC</color> <!-- Light blue for selected chip -->
+    <color name="chip_unselected_background">#F0F4F8</color> <!-- Light gray for unselected -->
+    <color name="chip_unselected_text">#7A8BA6</color> <!-- Grayish text for unselected -->
+    <color name="chip_unselected_stroke">#F0F4F8</color>
+</resources>

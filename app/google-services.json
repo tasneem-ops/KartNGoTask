@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "847265994574",
+    "project_id": "kart-n-go",
+    "storage_bucket": "kart-n-go.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847265994574:android:5ea6eb545d00defc10b01f",
+        "android_client_info": {
+          "package_name": "com.example.kartngotask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzcSdYhPVokatYKW71mFYsMEHGNgXhnkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

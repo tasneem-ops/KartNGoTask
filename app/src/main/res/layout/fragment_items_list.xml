@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ItemsListFragment">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_best_offers"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أفضل العروض"
+            android:textColor="@color/primary_blue"
+            android:checked="true"
+            app:chipBackgroundColor="@color/chip_selected_background"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="0dp"
+            app:closeIconEnabled="false"
+            app:chipIcon="@drawable/ic_check" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_imported"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مستورد"
+            android:textColor="@color/chip_unselected_text"
+            android:checked="false"
+            app:chipBackgroundColor="@color/chip_unselected_background"
+            app:chipStrokeColor="@color/chip_unselected_stroke"
+            app:chipStrokeWidth="0dp"
+            app:closeIconEnabled="false"
+            app:chipIcon="@drawable/ic_check" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_low_fat_cheese"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أجبان قابلة للدهون"
+            android:textColor="@color/chip_unselected_text"
+            android:checked="false"
+            app:chipBackgroundColor="@color/chip_unselected_background"
+            app:chipStrokeColor="@color/chip_unselected_stroke"
+            app:chipStrokeWidth="0dp"
+            app:closeIconEnabled="false"
+            app:chipIcon="@drawable/ic_check" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_cheese"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أجبان"
+            android:textColor="@color/chip_unselected_text"
+            android:checked="false"
+            app:chipBackgroundColor="@color/chip_unselected_background"
+            app:chipStrokeColor="@color/chip_unselected_stroke"
+            app:chipStrokeWidth="0dp"
+            app:closeIconEnabled="false"
+            app:chipIcon="@drawable/ic_check" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group"
+        app:layout_constraintBottom_toTopOf="@+id/footer_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_icon_blue"
+        app:cardCornerRadius="24dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/iv_show_cart"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_arrow"
+                app:tint="@color/white"
+                android:rotation="180"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_show_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_card"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_show_cart"/>
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="23.5 SAR"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
